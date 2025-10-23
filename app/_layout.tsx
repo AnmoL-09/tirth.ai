@@ -1,24 +1,42 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { useFonts } from 'expo-font';
+import { Stack } from "expo-router";
+import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from "expo-status-bar";
+import { useEffect } from 'react';
+import "../global.css";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+SplashScreen.preventAutoHideAsync();
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+export default function Layout() {
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+    const [loaded, error] = useFonts({
+    'Anton-Regular': require('../assets/fonts/Anton-Regular.ttf'),
+    'Cardo-Italic': require('../assets/fonts/Cardo-Italic.ttf')
+  });
+
+  useEffect(() => {
+    if (loaded || error) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded, error]);
+
+  if (!loaded && !error) {
+    return null;
+  }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+    <>
+      <StatusBar style="light" />
+      <Stack 
+        screenOptions={{ 
+          headerShown: false,
+          animation: 'fade',
+          contentStyle: { backgroundColor: '#000' }
+        }}
+      >
+        <Stack.Screen name="index" />
+        <Stack.Screen name="divinity" />
       </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    </>
   );
 }

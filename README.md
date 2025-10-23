@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# 🚀 Tirth.AI - Smart AI Tourist Assistant
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</div>
 
-## Get started
+Welcome to **Tirth.AI**, a cutting-edge mobile application built with React Native and Expo. This project represents ByteBenders' commitment to innovation and excellence in mobile development.
 
-1. Install dependencies
+## ✨ Features
 
+- **Cross-Platform**: Runs seamlessly on both iOS and Android
+- **Modern Stack**: Built with React Native, Expo, and TypeScript
+- **Developer Friendly**: Hot reloading and intuitive development workflow
+- **Performance Optimized**: Smooth animations and fast load times
+- **Beautiful UI**: Modern, responsive design with attention to detail
+
+## 🛠️ Prerequisites
+
+- Node.js 16+ and npm/yarn
+- Expo CLI installed globally (`npm install -g expo-cli`)
+- [Expo Go](https://expo.dev/client) app for testing on physical devices
+- (Optional) Xcode or Android Studio for emulator testing
+
+## 🚀 Quick Start
+
+1. **Clone the repository**
    ```bash
-   npm install
+   git clone https://github.com/your-username/sspu-hackomania.git
+   cd sspu-hackomania
    ```
 
-2. Start the app
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+3. **Start the development server**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on your device/emulator**
+   - Scan the QR code with Expo Go (Android) or Camera app (iOS)
+   - Press `i` for iOS Simulator
+   - Press `a` for Android Emulator
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🏗️ Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+sspu-hackomania/
+├── app/                  # Main application code
+│   ├── components/       # Reusable components
+│   ├── screens/          # App screens
+│   ├── navigation/       # Navigation configuration
+│   ├── assets/           # Images, fonts, etc.
+│   └── utils/            # Helper functions and utilities
+├── .gitignore
+├── app.json             # Expo configuration
+├── package.json         # Project dependencies
+└── README.md            # You're here! 👋
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔧 Development
 
-## Learn more
+- **Start with a clean slate**
+  ```bash
+  npm run reset-project
+  ```
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Run tests**
+  ```bash
+  npm test
+  ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **Lint code**
+  ```bash
+  npm run lint
+  ```
 
-## Join the community
+## 📜 License
 
-Join our community of developers creating universal apps.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📬 Contact
+
+Have questions or feedback? Reach out to us at [your-email@example.com](mailto:anmolmahobiya092@gmail.com)
+
+---
+
+<div align="center">
+  Made with ❤️ by ByteBenders | © 2025
+</div>
